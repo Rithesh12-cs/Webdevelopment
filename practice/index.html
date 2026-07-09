@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Student Registration Form</h1>
+    <form action="">
+        <fieldset>
+            <legend>Personal Details</legend>
+            <label for="fname">Full name-</label> <br>
+            <input type="text" id="fname" name="fname" placeholder="Enter your Name" required> <br>
+            <label for="password">Password-</label> <br>
+            <input type="password" id="password" placeholder="Enter your Password" required> <br>
+            <label for="phno">Phone Number-</label> <br>
+            <input type="phone" name="phno" id="phno" placeholder="Enter your Phone number" required> <br>
+
+            <label for="email">Email-</label> <br>
+            <input type="email" name="email" id="email" placeholder="Enter your Email" required> <br>
+
+            <label for="dob">Date of Birth-</label> <br>
+            <input type="date" name="dob" id="dob" placeholder="Enter your Date of Birth" required> <br>
+            <label for="url">Portfolio Link-</label> <br>
+            <input type="url" name="url" id="url" placeholder="Enter your Portfolio Link" required> <br>
+
+        </fieldset>
+    </form>
+    <fieldset>
+        <legend>Course Details</legend>
+        <label for="course">--Course--</label> <br>
+        <select id="course" name="course" required>
+            <option value="">--Select Course</option>
+            <option value="CSE">Computer Science Engineering</option>
+            <option value="AIML">Computer Science Engineering and AIML</option>
+            <option value="DS">Computer Science Engineering and Data Science</option>
+            <option value="CSBS">Computer Science and Business Systems</option>
+            <option value="ECE">Electronics and Communication Engineering</option>
+            <option value="EEE">Electrical and Electronics Engineering</option>
+            <option value="IT">Information Technology</option>
+            <option value="ME">Mechanical Engineering</option>
+        </select> <br>
+        <label for="city">--City--</label> <br>
+        <input type="text" id="city" name="city" list="citylist" placeholder="Enter your City" required> <br>
+        <datalist id="citylist">
+            <option value="Hyderabad"></option>
+            <option value="Delhi"></option>
+            <option value="Bangalore"></option>
+            <option value="Mumbai"></option>
+            <option value="Chennai"></option>
+            <option value="Kolkata"></option>
+            <option value="Pune"></option>
+        </datalist>
+
+        <label for="courses">--Courses--</label> <br>
+        <input type="text" id="searchBox" placeholder="Type to search courses..."> <br>
+        <label for="sel">--Selection Details --</label> <br>
+        <label for="sel">EAMCET Rank-</label>
+        <input type="number" id="sel" name="sel" placeholder="Enter EAMCET Rank" required> <br>
+        <label for="num">InterMarks-</label>
+        <input type="number" id="num" name="num" placeholder="Enter InterMarks" required> <br>
+        <label for="num1">JEE Rank-</label>
+        <input type="number" id="num1" name="num1" placeholder="Enter JEE Rank" required> <br>
+        <label for="gender">--Gender--</label> <br>
+        <input type="radio" id="gender" name="gender">Male <br>
+        <input type="radio" id="gender" name="gender">Female <br>
+        <input type="radio" id="gender" name="gender">Other <br>
+        <label for="skill">--Skills--</label> <br>
+        <input type="checkbox" id="skill" name="skill">Python <br>
+        <input type="checkbox" id="skill" name="skill">Java <br>
+        <input type="checkbox" id="skill" name="skill">C++ <br>
+        <input type="checkbox" id="skill" name="skill">C <br>
+        <input type="checkbox" id="skill" name="skill">HTML <br>
+        <input type="checkbox" id="skill" name="skill">CSS <br>
+        <input type="checkbox" id="skill" name="skill">JavaScript <br>
+        <input type="checkbox" id="skill" name="skill">SQL <br>
+
+        <label for="col">--Favorite Colour--</label> <br>
+        <input type="text" list="colorlist"> <br>
+        <datalist id="colorlist">
+            <option value="Red"></option>
+            <option value="Green"></option>
+            <option value="Blue"></option>
+            <option value="Yellow"></option>
+            <option value="Orange"></option>
+            <option value="Pink"></option>
+            <option value="Gray"></option>
+        </datalist>
+
+        <label for="prog">--Programming Language--</label> <br>
+        <input type="text" id="prog" name="prog" list="proglist" placeholder="Enter your Programming Language" required>
+        <br>
+        <datalist id="proglist"> <br>
+            <option value="Python"></option>
+            <option value="Java"></option>
+            <option value="C++"></option>
+            <option value="C"></option>
+            <option value="HTML"></option>
+            <option value="CSS"></option>
+            <option value="JavaScript"></option>
+            <option value="SQL"></option>
+        </datalist>
+    </fieldset>
+    <fieldset>
+        <legend>Date and Time Details</legend>
+        <label for="join">Joining Month</label> <br>
+        <input type="datetime-local" id="join" name="join" placeholder="select your joining date" required> <br>
+        <label for="fee">Training Fees</label> <br>
+        <input type="number" id="fee" name="fee" placeholder="Enter the Training Fees Amount" required> <br>
+        <label for="prefer">Preferred Time Slot</label> <br>
+        <input type="text" list="timeslotlist" required> <br>
+        <datalist id="timeslotlist"> <br>
+            <option value="Morning"></option>
+            <option value="Evening"></option>
+            <option value="Night"></option>
+        </datalist>
+        <label for="meeting">Meeting Date and Time</label> <br>
+        <input type="datetime-local" id="meeting" name="meeting" placeholder="select your meeting date and time"
+            required> <br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Documents and Address</legend>
+        <label for="resume">Upload Resume</label>
+        <input type="file" id="resume" name="resume" placeholder="Upload Resume" required> <br>
+        <label for="phno">Phone Number</label> <br>
+        <input type="number" id="phno" name="phno" placeholder="Enter your Phone Number" min="6000000000"
+            max="9999999999" required> <br>
+        <label for="email">Email</label> <br>
+        <input type="email" id="email" name="email" placeholder="example@gmail.com" required> <br>
+        <label for="addr">Address</label> <br>
+        <input type="text" id="addr" name="addr" placeholder="Enter your Address" required> <br>
+        <input type="submit" value="Submit">
+    </fieldset>
+</body>
+
+</html>
