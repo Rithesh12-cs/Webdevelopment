@@ -1,0 +1,13 @@
+body {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRas9StvcoOlsgsa0iDJfXu8QrNrncUSFt75QHeMqT1Jw&s=10");
+}
+fieldset {
+    margin: 10px;
+    padding: 100px;
+    background-color: rgb(20, 240, 240);
+    color: darkgray;
+    width: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
